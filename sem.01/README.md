@@ -4,6 +4,8 @@
 - WHERE
 - ORDER BY
 
+[Условия на задачите](https://github.com/vkraynova/Databases/blob/main/sem.01/sem.01-tasks.pdf)
+
 Задачи:
 
 [Task 01](https://github.com/vkraynova/Databases/blob/main/sem.01/task.01.sql) - Заявки върху базата [Movies](https://github.com/vkraynova/Databases/blob/main/Movies-MSSQL.sql)
