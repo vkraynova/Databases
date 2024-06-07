@@ -1,6 +1,6 @@
 Заявки върху Grouping
 
-[Условия на задачите](https://github.com/vkraynova/Databases/blob/main/sem.05/sem05-tasks.pdf)
+[Условия на задачите](https://github.com/vkraynova/Databases/blob/main/sem.05/sem.05-tasks.pdf)
 
 Задачи:
 
