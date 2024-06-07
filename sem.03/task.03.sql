@@ -1,4 +1,4 @@
-﻿use SHIPS
+USE SHIPS
 
 --1. Напишете заявка, която извежда страните, чиито кораби са с най-голям
 --брой оръдия.
@@ -19,7 +19,7 @@ SELECT NAME, CLASS
 FROM SHIPS
 WHERE CLASS IN (SELECT CLASS 
                 FROM CLASSES 
-				WHERE BORE = 16)
+		WHERE BORE = 16)
 
 --4. Напишете заявка, която извежда имената на битките, в които са
 --участвали кораби от клас ‘Kongo’.
@@ -27,7 +27,7 @@ SELECT BATTLE
 FROM OUTCOMES
 WHERE SHIP IN (SELECT NAME 
                FROM SHIPS 
-			   WHERE CLASS = 'Kongo')
+	       WHERE CLASS = 'Kongo')
 
 
 --5. Напишете заявка, която извежда класа и името на корабите, чиито брой
