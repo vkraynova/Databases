@@ -21,17 +21,14 @@ HAVING TYPE = 'bb'
 --4. Напишете заявка, която извежда за всеки клас първата и последната година, в
 --която кораб от съответния клас е пуснат на вода.
 SELECT CLASSES.CLASS, MIN(LAUNCHED) AS FirstYear, MAX(LAUNCHED) AS LastYear
-FROM CLASSES JOIN SHIPS
-                  ON CLASSES.CLASS = SHIPS.CLASS
+FROM CLASSES JOIN SHIPS ON CLASSES.CLASS = SHIPS.CLASS
 GROUP BY CLASSES.CLASS
 
 --5. Напишете заявка, която извежда броя на корабите, потънали в битка според
 --класа.
 SELECT CLASSES.CLASS, COUNT(NAME)
-FROM CLASSES JOIN SHIPS
-                  ON CLASSES.CLASS = SHIPS.CLASS
-             JOIN OUTCOMES ON
-        OUTCOMES.SHIP = SHIPS.NAME
+FROM CLASSES JOIN SHIPS ON CLASSES.CLASS = SHIPS.CLASS
+             JOIN OUTCOMES ON OUTCOMES.SHIP = SHIPS.NAME
 WHERE RESULT = 'sunk'
 GROUP BY CLASSES.CLASS
 
